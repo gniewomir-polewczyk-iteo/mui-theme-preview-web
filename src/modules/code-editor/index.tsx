@@ -2,6 +2,7 @@ import { LiveEditor, LiveProvider } from 'react-live'
 import { useCallback, useEffect, useState } from 'react'
 import { useAppContext } from '../../context'
 import debounce from 'lodash.debounce'
+import IconSync from '../../icons/icon-sync'
 
 const CodeEditor = () => {
   const [tempTheme, setTempTheme] = useState('')
@@ -26,7 +27,9 @@ const CodeEditor = () => {
 
   return (
     <div className="code-editor-module">
-      <button onClick={handleSetUserTheme}>Save theme</button>
+      <button className="code-sync-button" onClick={handleSetUserTheme}>
+        <IconSync height="32px" width="32px" />
+      </button>
       <LiveProvider>
         <LiveEditor code={tempTheme} onChange={debouncedChangeHandler} />
       </LiveProvider>
