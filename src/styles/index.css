@@ -3,6 +3,11 @@ body {
   padding: 0;
 }
 
+pre {
+  font-family: monospace !important;
+  font-size: 14px !important;
+}
+
 .app-module {
   display: flex;
 
@@ -15,9 +20,37 @@ body {
 .code-editor-module {
   height: 100vh;
   width: 30vw;
+
+  overflow: auto;
 }
 
 .live-preview-module {
   height: 100vh;
   width: 70vw;
+
+  margin: 0;
+  padding: 12px;
+
+  overflow: auto;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
