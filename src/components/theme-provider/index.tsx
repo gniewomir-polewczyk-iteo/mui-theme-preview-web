@@ -1,12 +1,14 @@
 import { ThemeProvider as Provider } from '@mui/material'
-import { theme } from '../../theme'
+import { useAppContext } from '../../context'
 
 type ComponentProps = {
   children: JSX.Element
 }
 
 const ThemeProvider = ({ children }: ComponentProps) => {
-  return <Provider theme={theme}>{children}</Provider>
+  const { userTheme } = useAppContext()
+
+  return <Provider theme={userTheme}>{children}</Provider>
 }
 
 export default ThemeProvider
