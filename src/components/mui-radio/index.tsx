@@ -4,10 +4,10 @@ import FormControlLabel from '@mui/material/FormControlLabel'
 import FormControl from '@mui/material/FormControl'
 import FormLabel from '@mui/material/FormLabel'
 
-const MuiRadioGroup = () => {
+const MuiRadio = () => {
   return (
-    <div className="mui-radio-group-wrapper">
-      <h1>Radio group</h1>
+    <div className="mui-radio-wrapper">
+      <h1>Radio</h1>
       <FormControl>
         <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
         <RadioGroup
@@ -24,4 +24,4 @@ const MuiRadioGroup = () => {
   )
 }
 
-export default MuiRadioGroup
+export default MuiRadio
