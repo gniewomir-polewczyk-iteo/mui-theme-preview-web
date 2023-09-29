@@ -5,6 +5,7 @@ import MuiFloatingActionButton from '../../components/mui-floating-action-button
 import MuiRadio from '../../components/mui-radio'
 import MuiRating from '../../components/mui-rating'
 import MuiSelect from '../../components/mui-select'
+import MuiSlider from '../../components/mui-slider'
 
 const ComponentsPreview = () => {
   return (
@@ -16,6 +17,7 @@ const ComponentsPreview = () => {
       <MuiRadio />
       <MuiRating />
       <MuiSelect />
+      <MuiSlider />
     </div>
   )
 }

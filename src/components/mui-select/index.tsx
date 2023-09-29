@@ -1,10 +1,13 @@
+import {
+  Box,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  NativeSelect,
+  Select,
+  SelectChangeEvent,
+} from '@mui/material'
 import { useState } from 'react'
-import Box from '@mui/material/Box'
-import FormControl from '@mui/material/FormControl'
-import InputLabel from '@mui/material/InputLabel'
-import MenuItem from '@mui/material/MenuItem'
-import NativeSelect from '@mui/material/NativeSelect'
-import Select, { SelectChangeEvent } from '@mui/material/Select'
 
 const MuiSelect = () => {
   const [age, setAge] = useState('')
