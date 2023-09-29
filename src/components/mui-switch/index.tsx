@@ -2,7 +2,7 @@ import { Box, FormControlLabel, FormGroup, Switch } from '@mui/material'
 
 const MuiSwitch = () => {
   return (
-    <div className="mui-checkbox-wrapper">
+    <div className="mui-switch-wrapper">
       <h1>Checkbox</h1>
       <Box>
         <Switch defaultChecked />
