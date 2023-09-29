@@ -2,7 +2,7 @@ import { Button, Stack } from '@mui/material'
 
 const MuiButton = () => {
   return (
-    <div className="mui-button">
+    <div className="mui-button-wrapper">
       <h1>Basic button</h1>
       <Stack spacing={2} direction="row">
         <Button variant="text">Text</Button>

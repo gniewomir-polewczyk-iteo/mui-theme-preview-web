@@ -6,7 +6,7 @@ const Tabs = () => {
   const { selectedTab } = useAppContext()
 
   return (
-    <div className="tabs-module">
+    <div className="tabs-wrapper">
       {selectedTab === 'components' && <ComponentsPreview />}
       {selectedTab === 'tabs' && <ThemePreview />}
     </div>

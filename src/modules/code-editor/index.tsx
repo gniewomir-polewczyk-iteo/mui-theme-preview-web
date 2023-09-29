@@ -26,7 +26,7 @@ const CodeEditor = () => {
   }, [userTheme])
 
   return (
-    <div className="code-editor-module">
+    <div className="code-editor-wrapper">
       <button className="code-sync-button" onClick={handleSetUserTheme}>
         <IconSync height="32px" width="32px" />
       </button>

@@ -11,7 +11,7 @@ h1 {
   padding: 0;
 }
 
-.app-module {
+.app-wrapper {
   display: flex;
 
   height: 100vh;
@@ -40,14 +40,14 @@ h1 {
   overflow: auto;
 }
 
-.navbar-module {
+.navbar-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.components-preview-module,
-.components-theme-module {
+.components-preview-wrapper,
+.components-theme-wrapper {
   padding-left: 32px;
 }
 

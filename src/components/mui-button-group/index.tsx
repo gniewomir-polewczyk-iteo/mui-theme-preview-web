@@ -2,7 +2,7 @@ import { Button, ButtonGroup } from '@mui/material'
 
 const MuiButtonGroup = () => {
   return (
-    <div className="mui-button">
+    <div className="mui-button-group-wrapper">
       <h1>Text button group</h1>
       <ButtonGroup variant="text" aria-label="text button group">
         <Button>One</Button>

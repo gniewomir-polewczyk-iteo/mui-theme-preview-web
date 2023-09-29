@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar-module">
+    <div className="navbar-wrapper">
       <button
         className="navbar-button"
         data-state={selectedTab === 'components' ? 'active' : 'inactive'}

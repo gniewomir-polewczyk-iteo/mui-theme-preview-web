@@ -2,7 +2,7 @@ import { Checkbox, FormControlLabel, FormGroup } from '@mui/material'
 
 const MuiCheckbox = () => {
   return (
-    <div className="mui-button">
+    <div className="mui-checkbox-wrapper">
       <h1>Checkbox</h1>
       <div>
         <Checkbox defaultChecked />

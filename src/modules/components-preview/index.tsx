@@ -4,7 +4,7 @@ import MuiCheckbox from '../../components/mui-checkbox'
 
 const ComponentsPreview = () => {
   return (
-    <div className="components-preview-module">
+    <div className="components-preview-wrapper">
       <MuiButton />
       <MuiButtonGroup />
       <MuiCheckbox />

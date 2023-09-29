@@ -4,7 +4,7 @@ import Tabs from '../tabs'
 
 const App = () => {
   return (
-    <div className="app-module">
+    <div className="app-wrapper">
       <div className="app-sidebar">
         <CodeEditor />
       </div>
