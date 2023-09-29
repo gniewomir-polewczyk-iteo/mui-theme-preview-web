@@ -2,9 +2,9 @@ import MuiButton from '../../components/mui-button'
 import MuiButtonGroup from '../../components/mui-button-group'
 import MuiCheckbox from '../../components/mui-checkbox'
 
-const LivePreview = () => {
+const ComponentsPreview = () => {
   return (
-    <div className="live-preview-module">
+    <div className="components-preview-module">
       <MuiButton />
       <MuiButtonGroup />
       <MuiCheckbox />
@@ -12,4 +12,4 @@ const LivePreview = () => {
   )
 }
 
-export default LivePreview
+export default ComponentsPreview
