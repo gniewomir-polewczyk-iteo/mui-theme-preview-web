@@ -18,7 +18,7 @@ const MuiFloatingActionButton = () => {
         </Fab>
       </Box>
 
-      <h1>Floating action button</h1>
+      <h1>Floating extended action button</h1>
       <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab variant="extended" size="small" color="primary">
           <NavigationIcon sx={{ mr: 1 }} />
