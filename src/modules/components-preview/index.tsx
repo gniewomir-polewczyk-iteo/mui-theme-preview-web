@@ -8,6 +8,7 @@ import MuiSelect from '../../components/mui-select'
 import MuiSlider from '../../components/mui-slider'
 import MuiSwitch from '../../components/mui-switch'
 import MuiTextfield from '../../components/mui-textfield'
+import MuiToggle from '../../components/mui-toggle'
 
 const ComponentsPreview = () => {
   return (
@@ -22,6 +23,7 @@ const ComponentsPreview = () => {
       <MuiSlider />
       <MuiSwitch />
       <MuiTextfield />
+      <MuiToggle />
     </div>
   )
 }
