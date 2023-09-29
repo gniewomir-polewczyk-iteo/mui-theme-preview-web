@@ -11,15 +11,23 @@ const MuiRadio = () => {
     <div className="mui-radio-wrapper">
       <h1>Radio</h1>
       <FormControl>
-        <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
-        <RadioGroup
-          aria-labelledby="demo-radio-buttons-group-label"
-          defaultValue="female"
-          name="radio-buttons-group"
-        >
-          <FormControlLabel value="female" control={<Radio />} label="Female" />
-          <FormControlLabel value="male" control={<Radio />} label="Male" />
-          <FormControlLabel value="other" control={<Radio />} label="Other" />
+        <FormLabel>Example</FormLabel>
+        <RadioGroup defaultValue="example1" name="radio-buttons-group">
+          <FormControlLabel
+            value="example1"
+            control={<Radio />}
+            label="Example 1"
+          />
+          <FormControlLabel
+            value="example2"
+            control={<Radio />}
+            label="Example 2"
+          />
+          <FormControlLabel
+            value="example3"
+            control={<Radio />}
+            label="Example 3"
+          />
         </RadioGroup>
       </FormControl>
     </div>

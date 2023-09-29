@@ -23,28 +23,14 @@ const MuiTextfield = () => {
   return (
     <div className="mui-textfield-wrapper">
       <h1>Textfield</h1>
-      <Box
-        component="form"
-        sx={{
-          '& > :not(style)': { m: 1, width: '25ch' },
-        }}
-        noValidate
-        autoComplete="off"
-      >
+      <Box component="form" noValidate autoComplete="off">
         <TextField id="outlined-basic" label="Outlined" variant="outlined" />
         <TextField id="filled-basic" label="Filled" variant="filled" />
         <TextField id="standard-basic" label="Standard" variant="standard" />
       </Box>
 
       <h1>Textfield error</h1>
-      <Box
-        component="form"
-        sx={{
-          '& > :not(style)': { m: 1, width: '25ch' },
-        }}
-        noValidate
-        autoComplete="off"
-      >
+      <Box component="form" noValidate autoComplete="off">
         <TextField
           error
           id="outlined-basic"
@@ -69,16 +55,8 @@ const MuiTextfield = () => {
       </Box>
 
       <h1>Textfield select</h1>
-      <Box
-        component="form"
-        sx={{
-          '& > :not(style)': { m: 1, width: '25ch' },
-        }}
-        noValidate
-        autoComplete="off"
-      >
+      <Box component="form" noValidate autoComplete="off">
         <TextField
-          id="outlined-select-currency"
           select
           label="Select"
           defaultValue="EUR"
@@ -91,7 +69,6 @@ const MuiTextfield = () => {
           ))}
         </TextField>
         <TextField
-          id="outlined-select-currency-native"
           select
           label="Native select"
           defaultValue="EUR"

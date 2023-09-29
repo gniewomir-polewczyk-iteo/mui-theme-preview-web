@@ -19,7 +19,7 @@ const MuiButton = () => {
 
       <h1>Contained button</h1>
       <Stack direction="row" spacing={2}>
-        <Button variant="contained">Contained</Button>
+        <Button variant="contained">Primary</Button>
         <Button variant="contained" disabled>
           Disabled
         </Button>

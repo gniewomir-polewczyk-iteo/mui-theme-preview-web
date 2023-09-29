@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   Box,
   FormControl,
@@ -7,13 +8,12 @@ import {
   Select,
   SelectChangeEvent,
 } from '@mui/material'
-import { useState } from 'react'
 
 const MuiSelect = () => {
-  const [age, setAge] = useState('')
+  const [example, setExample] = useState('')
 
   const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value as string)
+    setExample(event.target.value as string)
   }
 
   return (
@@ -21,14 +21,8 @@ const MuiSelect = () => {
       <h1>Select</h1>
       <Box sx={{ minWidth: 120, maxWidth: 480 }}>
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={age}
-            label="Age"
-            onChange={handleChange}
-          >
+          <InputLabel>Example</InputLabel>
+          <Select value={example} label="Example" onChange={handleChange}>
             <MenuItem value={10}>Ten</MenuItem>
             <MenuItem value={20}>Twenty</MenuItem>
             <MenuItem value={30}>Thirty</MenuItem>
@@ -40,12 +34,12 @@ const MuiSelect = () => {
       <Box sx={{ minWidth: 120, maxWidth: 480 }}>
         <FormControl fullWidth>
           <InputLabel variant="standard" htmlFor="uncontrolled-native">
-            Age
+            Example
           </InputLabel>
           <NativeSelect
             defaultValue={30}
             inputProps={{
-              name: 'age',
+              name: 'example',
               id: 'uncontrolled-native',
             }}
           >

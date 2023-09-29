@@ -1,5 +1,5 @@
-import { Box, Slider } from '@mui/material'
 import { useState } from 'react'
+import { Box, Slider } from '@mui/material'
 
 const MuiSlider = () => {
   const [value, setValue] = useState<number>(30)
@@ -10,7 +10,7 @@ const MuiSlider = () => {
   }
 
   const valuetext = (value: number) => {
-    return `${value}°C`
+    return `${value}`
   }
 
   const handleChangeRange = (event: Event, newValue: number | number[]) => {
@@ -27,7 +27,6 @@ const MuiSlider = () => {
       <h1>Discrete slider</h1>
       <Box sx={{ minWidth: 120, maxWidth: 480 }}>
         <Slider
-          aria-label="Temperature"
           defaultValue={30}
           getAriaValueText={valuetext}
           valueLabelDisplay="auto"
@@ -41,7 +40,7 @@ const MuiSlider = () => {
       <h1>Range slider</h1>
       <Box sx={{ minWidth: 120, maxWidth: 480 }}>
         <Slider
-          getAriaLabel={() => 'Temperature range'}
+          getAriaLabel={() => 'Range'}
           value={range}
           onChange={handleChangeRange}
           valueLabelDisplay="auto"

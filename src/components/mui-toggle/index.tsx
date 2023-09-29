@@ -18,22 +18,17 @@ const MuiToggle = () => {
   return (
     <div className="mui-textfield-wrapper">
       <h1>Toggle</h1>
-      <ToggleButtonGroup
-        value={alignment}
-        exclusive
-        onChange={handleAlignment}
-        aria-label="text alignment"
-      >
-        <ToggleButton value="left" aria-label="left aligned">
+      <ToggleButtonGroup value={alignment} exclusive onChange={handleAlignment}>
+        <ToggleButton value="left">
           <FormatAlignLeftIcon />
         </ToggleButton>
-        <ToggleButton value="center" aria-label="centered">
+        <ToggleButton value="center">
           <FormatAlignCenterIcon />
         </ToggleButton>
-        <ToggleButton value="right" aria-label="right aligned">
+        <ToggleButton value="right">
           <FormatAlignRightIcon />
         </ToggleButton>
-        <ToggleButton value="justify" aria-label="justified" disabled>
+        <ToggleButton value="justify" disabled>
           <FormatAlignJustifyIcon />
         </ToggleButton>
       </ToggleButtonGroup>

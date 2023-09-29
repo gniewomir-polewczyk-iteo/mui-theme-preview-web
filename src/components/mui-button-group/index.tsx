@@ -4,7 +4,7 @@ const MuiButtonGroup = () => {
   return (
     <div className="mui-button-group-wrapper">
       <h1>Text button group</h1>
-      <ButtonGroup variant="text" aria-label="text button group">
+      <ButtonGroup variant="text">
         <Button>One</Button>
         <Button>Two</Button>
         <Button>Three</Button>
@@ -18,7 +18,7 @@ const MuiButtonGroup = () => {
       </ButtonGroup>
 
       <h1>Outlined button group</h1>
-      <ButtonGroup variant="outlined" aria-label="outlined button group">
+      <ButtonGroup variant="outlined">
         <Button>One</Button>
         <Button>Two</Button>
         <Button>Three</Button>
