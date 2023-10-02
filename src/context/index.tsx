@@ -6,6 +6,8 @@ type TabType = 'components' | 'theme'
 type StateType = {
   userTheme: typeof theme
   setUserTheme: React.Dispatch<React.SetStateAction<typeof theme>>
+  tempTheme: string
+  setTempTheme: React.Dispatch<React.SetStateAction<string>>
   selectedTab: TabType
   setSelectedTab: React.Dispatch<React.SetStateAction<TabType>>
 }
@@ -16,11 +18,14 @@ export const AppContextProvider: React.FC<{ children: JSX.Element }> = ({
   children,
 }) => {
   const [userTheme, setUserTheme] = useState<typeof theme>(theme)
+  const [tempTheme, setTempTheme] = useState<string>('')
   const [selectedTab, setSelectedTab] = useState<TabType>('components')
 
   const values = {
     userTheme,
     setUserTheme,
+    tempTheme,
+    setTempTheme,
     selectedTab,
     setSelectedTab,
   }

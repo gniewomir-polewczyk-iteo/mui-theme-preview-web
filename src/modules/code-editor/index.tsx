@@ -1,19 +1,13 @@
 import debounce from 'lodash.debounce'
 import { LiveEditor, LiveProvider } from 'react-live'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect } from 'react'
 import { useAppContext } from '../../context'
-import IconSync from '../../icons/icon-sync'
 
 const CodeEditor = () => {
-  const [tempTheme, setTempTheme] = useState('')
-  const { userTheme, setUserTheme } = useAppContext()
+  const { userTheme, tempTheme, setTempTheme } = useAppContext()
 
   const handleSetTempTheme = (e: string) => {
     setTempTheme(e)
-  }
-
-  const handleSetUserTheme = () => {
-    setUserTheme(JSON.parse(tempTheme))
   }
 
   const debouncedChangeHandler = useCallback(
@@ -27,9 +21,6 @@ const CodeEditor = () => {
 
   return (
     <div className="code-editor-wrapper">
-      <button className="code-sync-button" onClick={handleSetUserTheme}>
-        <IconSync height="32px" width="32px" />
-      </button>
       <LiveProvider>
         <LiveEditor code={tempTheme} onChange={debouncedChangeHandler} />
       </LiveProvider>

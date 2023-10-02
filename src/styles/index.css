@@ -43,7 +43,7 @@ h1 {
 .navbar-wrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .components-preview-wrapper {
@@ -56,31 +56,6 @@ h1 {
 
   margin: 0;
   padding: 24px;
-}
-
-.code-sync-button {
-  position: fixed;
-  left: 30%;
-  top: 50%;
-
-  height: 64px;
-  width: 64px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #021527;
-  border: 4px solid #fff;
-  border-radius: 50%;
-
-  transition: all 0.15s;
-  transform: translate(-32px, -64px);
-}
-
-.code-sync-button:hover {
-  background-color: #addb67;
-  cursor: pointer;
 }
 
 .navbar-button {
@@ -96,7 +71,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
 
-  margin: 12px 12px 12px 0;
+  margin: 12px 0 12px 12px;
   padding: 0;
 }
 
@@ -111,15 +86,15 @@ h1 {
 
 /* custom scrollbar */
 
-::-webkit-scrollbar {
+.app-sidebar::-webkit-scrollbar {
   width: 12px;
 }
 
-::-webkit-scrollbar-track {
+.app-sidebar::-webkit-scrollbar-track {
   background-color: #021527;
 }
 
-::-webkit-scrollbar-thumb {
+.app-sidebar::-webkit-scrollbar-thumb {
   background-color: #fff;
   border-radius: 12px;
   border: 3px solid transparent;
