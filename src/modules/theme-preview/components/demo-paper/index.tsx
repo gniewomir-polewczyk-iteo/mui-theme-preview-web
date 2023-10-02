@@ -8,9 +8,7 @@ const DemoPaper = () => {
       <Paper>
         <Box display={'flex'}>
           <AccessTimeIcon />
-          <Typography variant="caption" color="common.white" fontSize="0.75em">
-            March 25th
-          </Typography>
+          <Typography variant="caption">March 25th</Typography>
         </Box>
         <Box>
           <CodeIcon />
