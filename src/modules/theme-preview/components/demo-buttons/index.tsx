@@ -2,11 +2,10 @@ import { Button, ButtonGroup } from '@mui/material'
 
 const DemoButtons = () => {
   return (
-    <div className="demo-buttons-wrapper">
+    <div className="demo-buttons-2-wrapper">
       <ButtonGroup disableElevation variant="contained">
-        <Button>Joy UI</Button>
-        <Button>Material UI</Button>
-        <Button>Base UI</Button>
+        <Button>Install everything</Button>
+        <Button>Learn about it</Button>
       </ButtonGroup>
     </div>
   )
