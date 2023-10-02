@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState } from 'react'
 import { theme } from '../theme'
 
-type TabType = 'components' | 'tabs'
+type TabType = 'components' | 'theme'
 
 type StateType = {
   userTheme: typeof theme

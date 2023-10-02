@@ -1,7 +1,7 @@
+import debounce from 'lodash.debounce'
 import { LiveEditor, LiveProvider } from 'react-live'
 import { useCallback, useEffect, useState } from 'react'
 import { useAppContext } from '../../context'
-import debounce from 'lodash.debounce'
 import IconSync from '../../icons/icon-sync'
 
 const CodeEditor = () => {

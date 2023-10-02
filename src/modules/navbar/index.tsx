@@ -7,7 +7,7 @@ const Navbar = () => {
     setSelectedTab('components')
   }
   const handleSetTheme = () => {
-    setSelectedTab('tabs')
+    setSelectedTab('theme')
   }
 
   return (
@@ -21,7 +21,7 @@ const Navbar = () => {
       </button>
       <button
         className="navbar-button"
-        data-state={selectedTab === 'tabs' ? 'active' : 'inactive'}
+        data-state={selectedTab === 'theme' ? 'active' : 'inactive'}
         onClick={handleSetTheme}
       >
         Theme

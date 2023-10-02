@@ -1,6 +1,6 @@
 body {
   font-family: monospace !important;
-  font-size: 14px !important;
+  font-size: 1rem !important;
 
   margin: 0;
   padding: 0;
@@ -46,9 +46,16 @@ h1 {
   justify-content: flex-end;
 }
 
-.components-preview-wrapper,
-.components-theme-wrapper {
+.components-preview-wrapper {
   padding-left: 32px;
+}
+
+.theme-preview-wrapper {
+  background-color: #e5eaf2;
+  display: flex;
+
+  margin: 0;
+  padding: 24px;
 }
 
 .code-sync-button {

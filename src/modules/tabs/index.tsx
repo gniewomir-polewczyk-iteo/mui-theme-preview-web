@@ -8,7 +8,7 @@ const Tabs = () => {
   return (
     <div className="tabs-wrapper">
       {selectedTab === 'components' && <ComponentsPreview />}
-      {selectedTab === 'tabs' && <ThemePreview />}
+      {selectedTab === 'theme' && <ThemePreview />}
     </div>
   )
 }
