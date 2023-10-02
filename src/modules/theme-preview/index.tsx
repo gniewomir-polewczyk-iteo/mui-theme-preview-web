@@ -12,9 +12,7 @@ const ThemePreview = () => {
           <DemoButtons />
           <DemoCalendar />
         </Grid>
-        <Grid item xs={6}>
-          xxx
-        </Grid>
+        <Grid item xs={6}></Grid>
       </Grid>
     </div>
   )

@@ -46,16 +46,16 @@ h1 {
   justify-content: flex-start;
 }
 
-.components-preview-wrapper {
-  padding-left: 32px;
-}
-
+.components-preview-wrapper,
 .theme-preview-wrapper {
   background-color: #e5eaf2;
-  display: flex;
 
   margin: 0;
   padding: 24px;
+}
+
+.theme-preview-wrapper {
+  display: flex;
 }
 
 .navbar-button {
@@ -71,7 +71,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
 
-  margin: 12px 0 12px 12px;
+  margin: 8px;
   padding: 0;
 }
 

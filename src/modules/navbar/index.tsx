@@ -25,6 +25,7 @@ const Navbar = () => {
       >
         Apply
       </button>
+      <div style={{ flexGrow: 1 }} />
       <button
         className="navbar-button"
         data-state={selectedTab === 'components' ? 'active' : 'inactive'}
