@@ -23,7 +23,7 @@ const DemoPaper = () => {
         <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
           <Avatar
             alt="Avatar"
-            src="/public/images/avatar/1.jpg"
+            src="/images/avatar/1.jpg"
             sx={{ border: '2px solid white', mr: 1 }}
           />
           <div>
