@@ -1,12 +1,22 @@
-import { Button, ButtonGroup } from '@mui/material'
+import { Button, Stack } from '@mui/material'
 
 const DemoButtons = () => {
   return (
     <div className="demo-buttons-wrapper">
-      <ButtonGroup disableElevation variant="contained">
-        <Button>Install everything</Button>
-        <Button>Learn about it</Button>
-      </ButtonGroup>
+      <Stack direction="row" spacing={2}>
+        <Button
+          variant="contained"
+          sx={{ fontSize: '0.85em', textTransform: 'none', width: '100%' }}
+        >
+          Install everything
+        </Button>
+        <Button
+          variant="outlined"
+          sx={{ fontSize: '0.85em', textTransform: 'none', width: '100%' }}
+        >
+          Learn about it
+        </Button>
+      </Stack>
     </div>
   )
 }

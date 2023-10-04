@@ -12,7 +12,7 @@ import DemoRange from '../../components/demo-range'
 const ThemePreview = () => {
   return (
     <div className="theme-preview-wrapper">
-      <Grid container spacing={2} sx={{ maxWidth: '820px' }}>
+      <Grid container spacing={2} sx={{ maxWidth: '900px' }}>
         <Grid item xs={6}>
           <Box sx={{ m: 3 }}>
             <DemoPaper />

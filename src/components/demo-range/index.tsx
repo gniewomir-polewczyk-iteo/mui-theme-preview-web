@@ -1,4 +1,4 @@
-import { Box, Paper, Slider, Typography } from '@mui/material'
+import { Box, Paper, Slider } from '@mui/material'
 
 const marks = [
   {
@@ -31,10 +31,7 @@ const DemoRange = () => {
   return (
     <div className="demo-range-wrapper">
       <Paper>
-        <Box>
-          <Typography id="track-inverted-range-slider" gutterBottom>
-            Inverted track range
-          </Typography>
+        <Box sx={{ p: 3, pt: 5 }}>
           <Slider
             valueLabelDisplay="on"
             getAriaValueText={valuetext}

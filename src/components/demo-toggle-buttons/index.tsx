@@ -19,10 +19,17 @@ const DemoToggleButtons = () => {
         exclusive
         onChange={handleChange}
         aria-label="Platform"
+        sx={{ display: 'flex' }}
       >
-        <ToggleButton value="joy-ui">Joy UI</ToggleButton>
-        <ToggleButton value="material-ui">Material UI</ToggleButton>
-        <ToggleButton value="base-ui">Base UI</ToggleButton>
+        <ToggleButton value="joy-ui" sx={{ width: '100%' }}>
+          Joy UI
+        </ToggleButton>
+        <ToggleButton value="material-ui" sx={{ width: '100%' }}>
+          Material UI
+        </ToggleButton>
+        <ToggleButton value="base-ui" sx={{ width: '100%' }}>
+          Base UI
+        </ToggleButton>
       </ToggleButtonGroup>
     </div>
   )

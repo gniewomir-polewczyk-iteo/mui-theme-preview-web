@@ -1,4 +1,5 @@
 import {
+  Box,
   Paper,
   Table,
   TableBody,
@@ -7,6 +8,7 @@ import {
   TableHead,
   TableRow,
 } from '@mui/material'
+import FolderIcon from '@mui/icons-material/Folder'
 
 function createData(name: string, size: number) {
   return { name, size }
@@ -26,8 +28,12 @@ const DemoTable = () => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell align="left">Name</TableCell>
-              <TableCell align="right">Size</TableCell>
+              <TableCell align="left" sx={{ fontWeight: 'bold' }}>
+                Name
+              </TableCell>
+              <TableCell align="right" sx={{ fontWeight: 'bold' }}>
+                Size
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -37,7 +43,12 @@ const DemoTable = () => {
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
-                  {row.name}
+                  <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                    <FolderIcon
+                      sx={{ color: 'primary.main', mr: 1, width: '16px' }}
+                    />
+                    {row.name}
+                  </Box>
                 </TableCell>
                 <TableCell align="right">{row.size} MB</TableCell>
               </TableRow>
