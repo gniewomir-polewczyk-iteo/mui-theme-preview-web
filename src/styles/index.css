@@ -48,8 +48,6 @@ h1 {
 
 .components-preview-wrapper,
 .theme-preview-wrapper {
-  background-color: #e5eaf2;
-
   margin: 0;
   padding: 24px;
 }
@@ -60,7 +58,7 @@ h1 {
 
 .navbar-button {
   height: 32px;
-  width: 120px;
+  width: 132px;
 
   border: none;
   border-radius: 4px;
@@ -68,7 +66,7 @@ h1 {
     0 1px 3px -1px rgba(0, 0, 0, 0.3);
   color: #333;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 
   margin: 8px;

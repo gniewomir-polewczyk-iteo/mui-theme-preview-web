@@ -19,7 +19,7 @@ export const AppContextProvider: React.FC<{ children: JSX.Element }> = ({
 }) => {
   const [userTheme, setUserTheme] = useState<typeof theme>(theme)
   const [tempTheme, setTempTheme] = useState<string>('')
-  const [selectedTab, setSelectedTab] = useState<TabType>('components')
+  const [selectedTab, setSelectedTab] = useState<TabType>('theme')
 
   const values = {
     userTheme,

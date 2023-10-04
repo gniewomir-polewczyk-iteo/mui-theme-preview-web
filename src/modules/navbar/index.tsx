@@ -8,6 +8,17 @@ const Navbar = () => {
     setUserTheme(JSON.parse(tempTheme))
   }
 
+  const handleSetPalette = () => {
+    const theme = JSON.parse(tempTheme)
+    const mode = theme.palette.mode
+    const updatedTheme = {
+      ...theme,
+      palette: { mode: mode === 'light' ? 'dark' : 'light' },
+    }
+
+    setUserTheme(updatedTheme)
+  }
+
   const handleSetComponents = () => {
     setSelectedTab('components')
   }
@@ -23,7 +34,14 @@ const Navbar = () => {
         data-state="active"
         onClick={handleSetUserTheme}
       >
-        Apply
+        Apply theme
+      </button>
+      <button
+        className="navbar-button"
+        data-state="active"
+        onClick={handleSetPalette}
+      >
+        Toggle mode
       </button>
       <div style={{ flexGrow: 1 }} />
       <button
@@ -31,14 +49,14 @@ const Navbar = () => {
         data-state={selectedTab === 'components' ? 'active' : 'inactive'}
         onClick={handleSetComponents}
       >
-        Components
+        Components view
       </button>
       <button
         className="navbar-button"
         data-state={selectedTab === 'theme' ? 'active' : 'inactive'}
         onClick={handleSetTheme}
       >
-        Theme
+        Theme view
       </button>
     </div>
   )
