@@ -6,11 +6,11 @@ import {
   Stack,
   Typography,
 } from '@mui/material'
-import PlayArrowIcon from '@mui/icons-material/PlayArrow'
-import ShuffleIcon from '@mui/icons-material/Shuffle'
 import FastForwardIcon from '@mui/icons-material/FastForward'
 import FastRewindIcon from '@mui/icons-material/FastRewind'
 import LoopIcon from '@mui/icons-material/Loop'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
+import ShuffleIcon from '@mui/icons-material/Shuffle'
 
 const DemoPlayer = () => {
   return (

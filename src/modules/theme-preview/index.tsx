@@ -9,6 +9,7 @@ import DemoChip from '../../components/demo-chip'
 import DemoTimeline from '../../components/demo-timeline'
 import DemoRange from '../../components/demo-range'
 import DemoPlayer from '../../components/demo-player'
+import DemoAccordion from '../../components/demo-accordion'
 
 const ThemePreview = () => {
   return (
@@ -46,6 +47,9 @@ const ThemePreview = () => {
           </Box>
           <Box sx={{ m: 3 }}>
             <DemoPlayer />
+          </Box>
+          <Box sx={{ m: 3 }}>
+            <DemoAccordion />
           </Box>
         </Grid>
       </Grid>
