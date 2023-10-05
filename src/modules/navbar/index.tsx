@@ -1,22 +1,29 @@
+import { Theme } from "@mui/material";
 import { useAppContext } from "../../context";
+import { defaultTheme } from "../../theme";
 
 const Navbar = () => {
   const { tempTheme, setUserTheme, selectedTab, setSelectedTab } =
     useAppContext();
 
   const handleSetUserTheme = () => {
-    setUserTheme(JSON.parse(tempTheme));
+    const theme = JSON.parse(tempTheme);
+    const updatedTheme = {
+      ...defaultTheme,
+      ...theme,
+    };
+
+    setUserTheme(updatedTheme);
   };
 
   const handleSetPalette = () => {
     const theme = JSON.parse(tempTheme);
-    const mode = theme.palette.mode;
     const updatedTheme = {
-      ...theme,
-      palette: { mode: mode === "light" ? "dark" : "light" },
+      ...defaultTheme,
+      palette: { mode: theme.palette.mode === "light" ? "dark" : "light" },
     };
 
-    setUserTheme(updatedTheme);
+    setUserTheme(updatedTheme as Theme);
   };
 
   const handleSetComponents = () => {
