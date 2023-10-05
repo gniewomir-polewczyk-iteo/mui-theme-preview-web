@@ -10,9 +10,9 @@ import MuiSwitch from "../../components/mui-switch";
 import MuiTextfield from "../../components/mui-textfield";
 import MuiToggle from "../../components/mui-toggle";
 
-const ComponentsPreview = () => {
+const PreviewComponents = () => {
   return (
-    <div className="components-preview-wrapper">
+    <div className="preview-components-wrapper">
       <MuiButton />
       <MuiButtonGroup />
       <MuiCheckbox />
@@ -28,4 +28,4 @@ const ComponentsPreview = () => {
   );
 };
 
-export default ComponentsPreview;
+export default PreviewComponents;

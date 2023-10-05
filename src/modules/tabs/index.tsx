@@ -1,14 +1,14 @@
 import { useAppContext } from "../../context";
-import ComponentsPreview from "../components-preview";
-import ThemePreview from "../theme-preview";
+import PreviewComponents from "../preview-components";
+import PreviewTheme from "../preview-theme";
 
 const Tabs = () => {
   const { selectedTab } = useAppContext();
 
   return (
     <div className="tabs-wrapper">
-      {selectedTab === "components" && <ComponentsPreview />}
-      {selectedTab === "theme" && <ThemePreview />}
+      {selectedTab === "components" && <PreviewComponents />}
+      {selectedTab === "theme" && <PreviewTheme />}
     </div>
   );
 };

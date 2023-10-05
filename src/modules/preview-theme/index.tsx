@@ -11,9 +11,9 @@ import DemoRange from "../../components/demo-range";
 import DemoPlayer from "../../components/demo-player";
 import DemoAccordion from "../../components/demo-accordion";
 
-const ThemePreview = () => {
+const PreviewTheme = () => {
   return (
-    <div className="theme-preview-wrapper">
+    <div className="preview-theme-wrapper">
       <Grid container spacing={2} sx={{ maxWidth: "900px" }}>
         <Grid item xs={6}>
           <Box sx={{ m: 3 }}>
@@ -57,4 +57,4 @@ const ThemePreview = () => {
   );
 };
 
-export default ThemePreview;
+export default PreviewTheme;

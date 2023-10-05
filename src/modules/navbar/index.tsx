@@ -41,7 +41,7 @@ const Navbar = () => {
         data-state="active"
         onClick={handleSetPalette}
       >
-        Toggle mode
+        Toggle theme
       </button>
       <div style={{ flexGrow: 1 }} />
       <button
@@ -49,14 +49,14 @@ const Navbar = () => {
         data-state={selectedTab === "components" ? "active" : "inactive"}
         onClick={handleSetComponents}
       >
-        Components view
+        Show components
       </button>
       <button
         className="navbar-button"
         data-state={selectedTab === "theme" ? "active" : "inactive"}
         onClick={handleSetTheme}
       >
-        Theme view
+        Show theme
       </button>
     </div>
   );
