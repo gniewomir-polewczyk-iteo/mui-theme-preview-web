@@ -1,15 +1,15 @@
 import React, { createContext, useContext, useState } from 'react'
-import { theme } from '../theme'
-
-type TabType = 'components' | 'theme'
+import { defaultTheme } from '../theme'
+import { TabType } from '../types'
+import { Theme } from '@mui/material'
 
 type StateType = {
-  userTheme: typeof theme
-  setUserTheme: React.Dispatch<React.SetStateAction<typeof theme>>
-  tempTheme: string
-  setTempTheme: React.Dispatch<React.SetStateAction<string>>
   selectedTab: TabType
   setSelectedTab: React.Dispatch<React.SetStateAction<TabType>>
+  userTheme: Theme
+  setUserTheme: React.Dispatch<React.SetStateAction<Theme>>
+  tempTheme: string
+  setTempTheme: React.Dispatch<React.SetStateAction<string>>
 }
 
 const AppContext = createContext<StateType | undefined>(undefined)
@@ -17,17 +17,17 @@ const AppContext = createContext<StateType | undefined>(undefined)
 export const AppContextProvider: React.FC<{ children: JSX.Element }> = ({
   children,
 }) => {
-  const [userTheme, setUserTheme] = useState<typeof theme>(theme)
-  const [tempTheme, setTempTheme] = useState<string>('')
   const [selectedTab, setSelectedTab] = useState<TabType>('theme')
+  const [userTheme, setUserTheme] = useState<Theme>(defaultTheme)
+  const [tempTheme, setTempTheme] = useState<string>('')
 
   const values = {
+    selectedTab,
+    setSelectedTab,
     userTheme,
     setUserTheme,
     tempTheme,
     setTempTheme,
-    selectedTab,
-    setSelectedTab,
   }
 
   return (
