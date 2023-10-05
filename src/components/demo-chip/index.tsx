@@ -1,4 +1,4 @@
-import { Chip, Stack } from '@mui/material'
+import { Chip, Stack } from "@mui/material";
 
 const DemoChip = () => {
   return (
@@ -11,7 +11,7 @@ const DemoChip = () => {
         <Chip label="JavaScript" variant="outlined" />
       </Stack>
     </div>
-  )
-}
+  );
+};
 
-export default DemoChip
+export default DemoChip;

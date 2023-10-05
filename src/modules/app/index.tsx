@@ -1,6 +1,6 @@
-import CodeEditor from '../code-editor'
-import Navbar from '../navbar'
-import Tabs from '../tabs'
+import CodeEditor from "../code-editor";
+import Navbar from "../navbar";
+import Tabs from "../tabs";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
         <Tabs />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

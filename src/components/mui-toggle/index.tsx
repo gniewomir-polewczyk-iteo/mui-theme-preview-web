@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import { ToggleButton, ToggleButtonGroup } from '@mui/material'
-import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignLeft'
-import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter'
-import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight'
-import FormatAlignJustifyIcon from '@mui/icons-material/FormatAlignJustify'
+import { useState } from "react";
+import { ToggleButton, ToggleButtonGroup } from "@mui/material";
+import FormatAlignCenterIcon from "@mui/icons-material/FormatAlignCenter";
+import FormatAlignJustifyIcon from "@mui/icons-material/FormatAlignJustify";
+import FormatAlignLeftIcon from "@mui/icons-material/FormatAlignLeft";
+import FormatAlignRightIcon from "@mui/icons-material/FormatAlignRight";
 
 const MuiToggle = () => {
-  const [alignment, setAlignment] = useState<string | null>('left')
+  const [alignment, setAlignment] = useState<string | null>("left");
 
   const handleAlignment = (
     event: React.MouseEvent<HTMLElement>,
     newAlignment: string | null
   ) => {
-    setAlignment(newAlignment)
-  }
+    setAlignment(newAlignment);
+  };
 
   return (
     <div className="mui-textfield-wrapper">
@@ -33,7 +33,7 @@ const MuiToggle = () => {
         </ToggleButton>
       </ToggleButtonGroup>
     </div>
-  )
-}
+  );
+};
 
-export default MuiToggle
+export default MuiToggle;

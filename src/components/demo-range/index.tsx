@@ -1,30 +1,30 @@
-import { Box, Paper, Slider } from '@mui/material'
+import { Box, Paper, Slider } from "@mui/material";
 
 const marks = [
   {
     value: 0,
-    label: '0°C',
+    label: "0°C",
   },
   {
     value: 20,
-    label: '20°C',
+    label: "20°C",
   },
   {
     value: 50,
-    label: '50°C',
+    label: "50°C",
   },
   {
     value: 80,
-    label: '80°C',
+    label: "80°C",
   },
   {
     value: 100,
-    label: '100°C',
+    label: "100°C",
   },
-]
+];
 
 function valuetext(value: number) {
-  return `${value}°C`
+  return `${value}°C`;
 }
 
 const DemoRange = () => {
@@ -41,7 +41,7 @@ const DemoRange = () => {
         </Box>
       </Paper>
     </div>
-  )
-}
+  );
+};
 
-export default DemoRange
+export default DemoRange;

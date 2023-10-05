@@ -1,23 +1,23 @@
-import { Box, MenuItem, TextField } from '@mui/material'
+import { Box, MenuItem, TextField } from "@mui/material";
 
 const currencies = [
   {
-    value: 'USD',
-    label: '$',
+    value: "USD",
+    label: "$",
   },
   {
-    value: 'EUR',
-    label: '€',
+    value: "EUR",
+    label: "€",
   },
   {
-    value: 'BTC',
-    label: '฿',
+    value: "BTC",
+    label: "฿",
   },
   {
-    value: 'JPY',
-    label: '¥',
+    value: "JPY",
+    label: "¥",
   },
-]
+];
 
 const MuiTextfield = () => {
   return (
@@ -85,7 +85,7 @@ const MuiTextfield = () => {
         </TextField>
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default MuiTextfield
+export default MuiTextfield;

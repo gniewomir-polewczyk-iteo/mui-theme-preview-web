@@ -1,21 +1,21 @@
-import { useState } from 'react'
-import { Box, Slider } from '@mui/material'
+import { useState } from "react";
+import { Box, Slider } from "@mui/material";
 
 const MuiSlider = () => {
-  const [value, setValue] = useState<number>(30)
-  const [range, setRange] = useState<number[]>([20, 37])
+  const [value, setValue] = useState<number>(30);
+  const [range, setRange] = useState<number[]>([20, 37]);
 
   const handleChangeValue = (event: Event, newValue: number | number[]) => {
-    setValue(newValue as number)
-  }
+    setValue(newValue as number);
+  };
 
   const valuetext = (value: number) => {
-    return `${value}`
-  }
+    return `${value}`;
+  };
 
   const handleChangeRange = (event: Event, newValue: number | number[]) => {
-    setRange(newValue as number[])
-  }
+    setRange(newValue as number[]);
+  };
 
   return (
     <div className="mui-slider-wrapper">
@@ -40,7 +40,7 @@ const MuiSlider = () => {
       <h1>Range slider</h1>
       <Box sx={{ minWidth: 120, maxWidth: 480 }}>
         <Slider
-          getAriaLabel={() => 'Range'}
+          getAriaLabel={() => "Range"}
           value={range}
           onChange={handleChangeRange}
           valueLabelDisplay="auto"
@@ -48,7 +48,7 @@ const MuiSlider = () => {
         />
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default MuiSlider
+export default MuiSlider;

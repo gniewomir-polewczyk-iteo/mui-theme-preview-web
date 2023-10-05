@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import { Box, Rating, Typography } from '@mui/material'
+import { useState } from "react";
+import { Box, Rating, Typography } from "@mui/material";
 
 const MuiRating = () => {
-  const [value, setValue] = useState<number | null>(2)
+  const [value, setValue] = useState<number | null>(2);
 
   return (
     <div className="mui-rating-wrapper">
@@ -13,7 +13,7 @@ const MuiRating = () => {
           name="simple-controlled"
           value={value}
           onChange={(event, newValue) => {
-            setValue(newValue)
+            setValue(newValue);
           }}
         />
         <Typography component="legend">Read only</Typography>
@@ -24,7 +24,7 @@ const MuiRating = () => {
         <Rating name="no-value" value={null} />
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default MuiRating
+export default MuiRating;

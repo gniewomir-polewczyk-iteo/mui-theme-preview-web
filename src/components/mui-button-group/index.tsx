@@ -1,4 +1,4 @@
-import { Button, ButtonGroup } from '@mui/material'
+import { Button, ButtonGroup } from "@mui/material";
 
 const MuiButtonGroup = () => {
   return (
@@ -24,7 +24,7 @@ const MuiButtonGroup = () => {
         <Button>Three</Button>
       </ButtonGroup>
     </div>
-  )
-}
+  );
+};
 
-export default MuiButtonGroup
+export default MuiButtonGroup;

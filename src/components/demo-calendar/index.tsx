@@ -1,6 +1,6 @@
-import { Paper } from '@mui/material'
-import { DateCalendar, LocalizationProvider } from '@mui/x-date-pickers'
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DateCalendar, LocalizationProvider } from "@mui/x-date-pickers";
+import { Paper } from "@mui/material";
 
 const DemoCalendar = () => {
   return (
@@ -11,7 +11,7 @@ const DemoCalendar = () => {
         </LocalizationProvider>
       </Paper>
     </div>
-  )
-}
+  );
+};
 
-export default DemoCalendar
+export default DemoCalendar;

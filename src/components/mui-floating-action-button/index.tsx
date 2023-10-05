@@ -1,6 +1,6 @@
-import { Box, Fab } from '@mui/material'
-import AddIcon from '@mui/icons-material/Add'
-import NavigationIcon from '@mui/icons-material/Navigation'
+import { Box, Fab } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+import NavigationIcon from "@mui/icons-material/Navigation";
 
 const MuiFloatingActionButton = () => {
   return (
@@ -34,7 +34,7 @@ const MuiFloatingActionButton = () => {
         </Fab>
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default MuiFloatingActionButton
+export default MuiFloatingActionButton;

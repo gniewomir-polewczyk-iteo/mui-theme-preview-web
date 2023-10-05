@@ -1,1 +1,1 @@
-export type TabType = 'components' | 'theme'
+export type TabType = "components" | "theme";

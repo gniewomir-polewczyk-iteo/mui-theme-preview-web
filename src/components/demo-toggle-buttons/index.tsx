@@ -1,15 +1,15 @@
-import { ToggleButton, ToggleButtonGroup } from '@mui/material'
-import { useState } from 'react'
+import { useState } from "react";
+import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 
 const DemoToggleButtons = () => {
-  const [alignment, setAlignment] = useState('material-ui')
+  const [alignment, setAlignment] = useState("material-ui");
 
   const handleChange = (
     event: React.MouseEvent<HTMLElement>,
     newAlignment: string
   ) => {
-    setAlignment(newAlignment)
-  }
+    setAlignment(newAlignment);
+  };
 
   return (
     <div className="demo-toggle-buttons-wrapper">
@@ -19,20 +19,20 @@ const DemoToggleButtons = () => {
         exclusive
         onChange={handleChange}
         aria-label="Platform"
-        sx={{ display: 'flex' }}
+        sx={{ display: "flex" }}
       >
-        <ToggleButton value="joy-ui" sx={{ width: '100%' }}>
+        <ToggleButton value="joy-ui" sx={{ width: "100%" }}>
           Joy UI
         </ToggleButton>
-        <ToggleButton value="material-ui" sx={{ width: '100%' }}>
+        <ToggleButton value="material-ui" sx={{ width: "100%" }}>
           Material UI
         </ToggleButton>
-        <ToggleButton value="base-ui" sx={{ width: '100%' }}>
+        <ToggleButton value="base-ui" sx={{ width: "100%" }}>
           Base UI
         </ToggleButton>
       </ToggleButtonGroup>
     </div>
-  )
-}
+  );
+};
 
-export default DemoToggleButtons
+export default DemoToggleButtons;

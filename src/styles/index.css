@@ -77,7 +77,7 @@ h1 {
   cursor: pointer;
 }
 
-.navbar-button[data-state='active'] {
+.navbar-button[data-state="active"] {
   background-color: #1976d2;
   color: #fff;
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react";
 import {
   Box,
   FormControl,
@@ -7,14 +7,14 @@ import {
   NativeSelect,
   Select,
   SelectChangeEvent,
-} from '@mui/material'
+} from "@mui/material";
 
 const MuiSelect = () => {
-  const [example, setExample] = useState('')
+  const [example, setExample] = useState("");
 
   const handleChange = (event: SelectChangeEvent) => {
-    setExample(event.target.value as string)
-  }
+    setExample(event.target.value as string);
+  };
 
   return (
     <div className="mui-select-wrapper">
@@ -39,8 +39,8 @@ const MuiSelect = () => {
           <NativeSelect
             defaultValue={30}
             inputProps={{
-              name: 'example',
-              id: 'uncontrolled-native',
+              name: "example",
+              id: "uncontrolled-native",
             }}
           >
             <option value={10}>Ten</option>
@@ -50,7 +50,7 @@ const MuiSelect = () => {
         </FormControl>
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default MuiSelect
+export default MuiSelect;

@@ -1,31 +1,31 @@
-import { useAppContext } from '../../context'
+import { useAppContext } from "../../context";
 
 const Navbar = () => {
   const { tempTheme, setUserTheme, selectedTab, setSelectedTab } =
-    useAppContext()
+    useAppContext();
 
   const handleSetUserTheme = () => {
-    setUserTheme(JSON.parse(tempTheme))
-  }
+    setUserTheme(JSON.parse(tempTheme));
+  };
 
   const handleSetPalette = () => {
-    const theme = JSON.parse(tempTheme)
-    const mode = theme.palette.mode
+    const theme = JSON.parse(tempTheme);
+    const mode = theme.palette.mode;
     const updatedTheme = {
       ...theme,
-      palette: { mode: mode === 'light' ? 'dark' : 'light' },
-    }
+      palette: { mode: mode === "light" ? "dark" : "light" },
+    };
 
-    setUserTheme(updatedTheme)
-  }
+    setUserTheme(updatedTheme);
+  };
 
   const handleSetComponents = () => {
-    setSelectedTab('components')
-  }
+    setSelectedTab("components");
+  };
 
   const handleSetTheme = () => {
-    setSelectedTab('theme')
-  }
+    setSelectedTab("theme");
+  };
 
   return (
     <div className="navbar-wrapper">
@@ -46,20 +46,20 @@ const Navbar = () => {
       <div style={{ flexGrow: 1 }} />
       <button
         className="navbar-button"
-        data-state={selectedTab === 'components' ? 'active' : 'inactive'}
+        data-state={selectedTab === "components" ? "active" : "inactive"}
         onClick={handleSetComponents}
       >
         Components view
       </button>
       <button
         className="navbar-button"
-        data-state={selectedTab === 'theme' ? 'active' : 'inactive'}
+        data-state={selectedTab === "theme" ? "active" : "inactive"}
         onClick={handleSetTheme}
       >
         Theme view
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

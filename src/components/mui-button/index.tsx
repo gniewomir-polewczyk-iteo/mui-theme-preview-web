@@ -1,4 +1,4 @@
-import { Button, Stack } from '@mui/material'
+import { Button, Stack } from "@mui/material";
 
 const MuiButton = () => {
   return (
@@ -39,7 +39,7 @@ const MuiButton = () => {
         </Button>
       </Stack>
     </div>
-  )
-}
+  );
+};
 
-export default MuiButton
+export default MuiButton;

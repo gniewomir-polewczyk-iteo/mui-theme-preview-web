@@ -1,4 +1,4 @@
-import { Box, Chip, Paper, Stack, Typography } from '@mui/material'
+import { Box, Chip, Paper, Stack, Typography } from "@mui/material";
 import {
   Timeline,
   TimelineItem,
@@ -6,8 +6,8 @@ import {
   TimelineDot,
   TimelineConnector,
   TimelineContent,
-} from '@mui/lab'
-import { timelineItemClasses } from '@mui/lab/TimelineItem'
+} from "@mui/lab";
+import { timelineItemClasses } from "@mui/lab/TimelineItem";
 
 const DemoTimeline = () => {
   return (
@@ -16,14 +16,14 @@ const DemoTimeline = () => {
         <Box>
           <Stack direction="row" spacing={2}>
             <Chip label="1" color="primary" variant="outlined" size="small" />
-            <Typography sx={{ fontSize: '0.8em' }}>
+            <Typography sx={{ fontSize: "0.8em" }}>
               Install one of our production-ready libraries to get your next app
               started inevitably successful:
             </Typography>
           </Stack>
         </Box>
         <Box>
-          {' '}
+          {" "}
           <Timeline
             sx={{
               [`& .${timelineItemClasses.root}:before`]: {
@@ -35,27 +35,27 @@ const DemoTimeline = () => {
           >
             <TimelineItem sx={{ minHeight: 48 }}>
               <TimelineSeparator>
-                <TimelineDot sx={{ backgroundColor: 'primary.main' }} />
-                <TimelineConnector sx={{ backgroundColor: 'primary.main' }} />
+                <TimelineDot sx={{ backgroundColor: "primary.main" }} />
+                <TimelineConnector sx={{ backgroundColor: "primary.main" }} />
               </TimelineSeparator>
-              <TimelineContent sx={{ fontSize: '0.8em' }}>
+              <TimelineContent sx={{ fontSize: "0.8em" }}>
                 Material UI
               </TimelineContent>
             </TimelineItem>
             <TimelineItem sx={{ minHeight: 48 }}>
               <TimelineSeparator>
-                <TimelineDot sx={{ backgroundColor: 'primary.main' }} />
-                <TimelineConnector sx={{ backgroundColor: 'primary.main' }} />
+                <TimelineDot sx={{ backgroundColor: "primary.main" }} />
+                <TimelineConnector sx={{ backgroundColor: "primary.main" }} />
               </TimelineSeparator>
-              <TimelineContent sx={{ fontSize: '0.8em' }}>
+              <TimelineContent sx={{ fontSize: "0.8em" }}>
                 Base UI
               </TimelineContent>
             </TimelineItem>
             <TimelineItem sx={{ minHeight: 0 }}>
               <TimelineSeparator>
-                <TimelineDot sx={{ backgroundColor: 'primary.main' }} />
+                <TimelineDot sx={{ backgroundColor: "primary.main" }} />
               </TimelineSeparator>
-              <TimelineContent sx={{ fontSize: '0.8em' }}>
+              <TimelineContent sx={{ fontSize: "0.8em" }}>
                 Joy UI
               </TimelineContent>
             </TimelineItem>
@@ -63,7 +63,7 @@ const DemoTimeline = () => {
         </Box>
       </Paper>
     </div>
-  )
-}
+  );
+};
 
-export default DemoTimeline
+export default DemoTimeline;

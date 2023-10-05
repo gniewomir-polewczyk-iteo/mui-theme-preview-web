@@ -4,7 +4,7 @@ import {
   FormLabel,
   Radio,
   RadioGroup,
-} from '@mui/material'
+} from "@mui/material";
 
 const MuiRadio = () => {
   return (
@@ -31,7 +31,7 @@ const MuiRadio = () => {
         </RadioGroup>
       </FormControl>
     </div>
-  )
-}
+  );
+};
 
-export default MuiRadio
+export default MuiRadio;
