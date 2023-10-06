@@ -1,14 +1,16 @@
 body {
-  font-family: monospace !important;
-  font-size: 1rem !important;
-
   margin: 0;
   padding: 0;
 }
 
 h1 {
+  font-size: 24px;
   margin: 64px 0 12px 0;
   padding: 0;
+}
+
+#ace-editor {
+  height: 100vh !important;
 }
 
 .app-wrapper {
@@ -22,7 +24,7 @@ h1 {
 
 .app-sidebar {
   height: 100vh;
-  width: 30vw;
+  width: 500px;
 
   margin: 0;
   padding: 0;
@@ -32,7 +34,7 @@ h1 {
 
 .app-main {
   height: 100vh;
-  width: 70vw;
+  width: calc(100vw - 500px);
 
   margin: 0;
   padding: 0;
@@ -80,21 +82,4 @@ h1 {
 .navbar-button[data-state="active"] {
   background-color: #1976d2;
   color: #fff;
-}
-
-/* custom scrollbar */
-
-.app-sidebar::-webkit-scrollbar {
-  width: 12px;
-}
-
-.app-sidebar::-webkit-scrollbar-track {
-  background-color: #021527;
-}
-
-.app-sidebar::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  border-radius: 12px;
-  border: 3px solid transparent;
-  background-clip: content-box;
 }

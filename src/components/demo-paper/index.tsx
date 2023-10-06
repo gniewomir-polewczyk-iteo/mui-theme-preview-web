@@ -8,15 +8,19 @@ const DemoPaper = () => {
       <Paper sx={{ bgcolor: "primary.main", p: 3 }}>
         <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
           <AccessTimeIcon
-            sx={{ color: "common.white", mr: 1, width: "16px" }}
+            sx={{ color: "primary.contrastText", mr: 1, width: "16px" }}
           />
-          <Typography sx={{ color: "common.white", fontSize: "0.75em" }}>
+          <Typography
+            sx={{ color: "primary.contrastText", fontSize: "0.75em" }}
+          >
             March 25th
           </Typography>
         </Box>
         <Box sx={{ mb: 3 }}>
-          <CodeIcon sx={{ color: "common.white" }} />
-          <Typography sx={{ color: "common.white", fontSize: "1.15em" }}>
+          <CodeIcon sx={{ color: "primary.contrastText" }} />
+          <Typography
+            sx={{ color: "primary.contrastText", fontSize: "1.15em" }}
+          >
             Customize every button and chip instance primary color
           </Typography>
         </Box>
@@ -27,10 +31,14 @@ const DemoPaper = () => {
             sx={{ border: "2px solid white", mr: 1 }}
           />
           <div>
-            <Typography sx={{ color: "common.white", fontSize: "0.75em" }}>
+            <Typography
+              sx={{ color: "primary.contrastText", fontSize: "0.75em" }}
+            >
               Assigned to
             </Typography>
-            <Typography sx={{ color: "common.white", fontSize: "0.85em" }}>
+            <Typography
+              sx={{ color: "primary.contrastText", fontSize: "0.85em" }}
+            >
               Michael Scott
             </Typography>
           </div>
@@ -41,14 +49,16 @@ const DemoPaper = () => {
               variant="determinate"
               value={60}
               sx={{
-                ".MuiLinearProgress-bar": { backgroundColor: "common.white" },
+                ".MuiLinearProgress-bar": {
+                  backgroundColor: "primary.contrastText",
+                },
               }}
             />
           </Box>
           <Typography
             variant="body2"
             sx={{
-              color: "common.white",
+              color: "primary.contrastText",
               fontSize: "0.85em",
               textAlign: "center",
               width: "20%",

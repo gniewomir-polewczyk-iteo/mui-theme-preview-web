@@ -1,29 +1,42 @@
-import debounce from "lodash.debounce";
-import { LiveEditor, LiveProvider } from "react-live";
-import { useCallback, useEffect } from "react";
+import { useEffect } from "react";
 import { useAppContext } from "../../context";
 
+import AceEditor from "react-ace";
+
+import darkMode from "../../themes/dark-mode";
+import lightMode from "../../themes/light-mode";
+
+import "ace-builds/src-noconflict/ext-language_tools";
+import "ace-builds/src-noconflict/mode-javascript";
+import "ace-builds/src-noconflict/theme-monokai";
+
 const CodeEditor = () => {
-  const { userTheme, tempTheme, setTempTheme } = useAppContext();
+  const { tempTheme, setTempTheme, mode } = useAppContext();
 
   const handleSetTempTheme = (e: string) => {
     setTempTheme(e);
   };
 
-  const debouncedChangeHandler = useCallback(
-    debounce(handleSetTempTheme, 500),
-    []
-  );
-
   useEffect(() => {
-    setTempTheme(JSON.stringify(userTheme, undefined, 2));
-  }, [userTheme]);
+    if (mode === "light") setTempTheme(JSON.stringify(lightMode, null, 2));
+    if (mode === "dark") setTempTheme(JSON.stringify(darkMode, null, 2));
+  }, [mode]);
 
   return (
     <div className="code-editor-wrapper">
-      <LiveProvider>
-        <LiveEditor code={tempTheme} onChange={debouncedChangeHandler} />
-      </LiveProvider>
+      <AceEditor
+        value={tempTheme}
+        mode="javascript"
+        theme="monokai"
+        fontSize="12px"
+        onChange={handleSetTempTheme}
+        highlightActiveLine={true}
+        setOptions={{
+          enableLiveAutocompletion: false,
+          showLineNumbers: true,
+          tabSize: 2,
+        }}
+      />
     </div>
   );
 };

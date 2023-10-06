@@ -1,29 +1,31 @@
-import { Theme } from "@mui/material";
 import { useAppContext } from "../../context";
-import { defaultTheme } from "../../theme";
+
+import darkMode from "../../themes/dark-mode";
+import lightMode from "../../themes/light-mode";
 
 const Navbar = () => {
-  const { tempTheme, setUserTheme, selectedTab, setSelectedTab } =
-    useAppContext();
+  const {
+    tempTheme,
+    setUserTheme,
+    selectedTab,
+    setSelectedTab,
+    mode,
+    setMode,
+  } = useAppContext();
 
   const handleSetUserTheme = () => {
-    const theme = JSON.parse(tempTheme);
-    const updatedTheme = {
-      ...defaultTheme,
-      ...theme,
-    };
-
-    setUserTheme(updatedTheme);
+    setUserTheme(JSON.parse(tempTheme));
   };
 
-  const handleSetPalette = () => {
-    const theme = JSON.parse(tempTheme);
-    const updatedTheme = {
-      ...defaultTheme,
-      palette: { mode: theme.palette.mode === "light" ? "dark" : "light" },
-    };
-
-    setUserTheme(updatedTheme as Theme);
+  const handleSetMode = () => {
+    if (mode === "light") {
+      setMode("dark");
+      setUserTheme(darkMode);
+    }
+    if (mode === "dark") {
+      setMode("light");
+      setUserTheme(lightMode);
+    }
   };
 
   const handleSetComponents = () => {
@@ -46,7 +48,7 @@ const Navbar = () => {
       <button
         className="navbar-button"
         data-state="active"
-        onClick={handleSetPalette}
+        onClick={handleSetMode}
       >
         Toggle theme
       </button>

@@ -1,15 +1,16 @@
 import React, { createContext, useContext, useState } from "react";
 import { defaultTheme } from "../theme";
 import { TabType } from "../types";
-import { Theme } from "@mui/material";
 
 type StateType = {
   selectedTab: TabType;
   setSelectedTab: React.Dispatch<React.SetStateAction<TabType>>;
-  userTheme: Theme;
-  setUserTheme: React.Dispatch<React.SetStateAction<Theme>>;
+  userTheme: object;
+  setUserTheme: React.Dispatch<React.SetStateAction<object>>;
   tempTheme: string;
   setTempTheme: React.Dispatch<React.SetStateAction<string>>;
+  mode: "light" | "dark";
+  setMode: React.Dispatch<React.SetStateAction<"light" | "dark">>;
 };
 
 const AppContext = createContext<StateType | undefined>(undefined);
@@ -18,8 +19,9 @@ export const AppContextProvider: React.FC<{ children: JSX.Element }> = ({
   children,
 }) => {
   const [selectedTab, setSelectedTab] = useState<TabType>("theme");
-  const [userTheme, setUserTheme] = useState<Theme>(defaultTheme);
+  const [userTheme, setUserTheme] = useState<object>(defaultTheme);
   const [tempTheme, setTempTheme] = useState<string>("");
+  const [mode, setMode] = useState<"light" | "dark">("light");
 
   const values = {
     selectedTab,
@@ -28,6 +30,8 @@ export const AppContextProvider: React.FC<{ children: JSX.Element }> = ({
     setUserTheme,
     tempTheme,
     setTempTheme,
+    mode,
+    setMode,
   };
 
   return (
