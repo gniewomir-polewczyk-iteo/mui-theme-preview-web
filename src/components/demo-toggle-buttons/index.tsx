@@ -5,7 +5,7 @@ const DemoToggleButtons = () => {
   const [alignment, setAlignment] = useState("material-ui");
 
   const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
+    _event: React.MouseEvent<HTMLElement>,
     newAlignment: string
   ) => {
     setAlignment(newAlignment);

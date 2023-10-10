@@ -5,7 +5,7 @@ const MuiSlider = () => {
   const [value, setValue] = useState<number>(30);
   const [range, setRange] = useState<number[]>([20, 37]);
 
-  const handleChangeValue = (event: Event, newValue: number | number[]) => {
+  const handleChangeValue = (_event: Event, newValue: number | number[]) => {
     setValue(newValue as number);
   };
 
@@ -13,7 +13,7 @@ const MuiSlider = () => {
     return `${value}`;
   };
 
-  const handleChangeRange = (event: Event, newValue: number | number[]) => {
+  const handleChangeRange = (_event: Event, newValue: number | number[]) => {
     setRange(newValue as number[]);
   };
 
