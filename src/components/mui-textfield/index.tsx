@@ -24,9 +24,24 @@ const MuiTextfield = () => {
     <div className="mui-textfield-wrapper">
       <h1>Textfield</h1>
       <Box component="form" noValidate autoComplete="off">
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-        <TextField id="filled-basic" label="Filled" variant="filled" />
-        <TextField id="standard-basic" label="Standard" variant="standard" />
+        <TextField
+          id="outlined-basic"
+          label="Outlined"
+          variant="outlined"
+          sx={{ mr: 1 }}
+        />
+        <TextField
+          id="filled-basic"
+          label="Filled"
+          variant="filled"
+          sx={{ mr: 1 }}
+        />
+        <TextField
+          id="standard-basic"
+          label="Standard"
+          variant="standard"
+          sx={{ mr: 1 }}
+        />
       </Box>
 
       <h1>Textfield error</h1>
@@ -37,6 +52,7 @@ const MuiTextfield = () => {
           label="Error"
           helperText="Incorrect entry."
           variant="outlined"
+          sx={{ mr: 1 }}
         />
         <TextField
           error
@@ -44,6 +60,7 @@ const MuiTextfield = () => {
           label="Error"
           helperText="Incorrect entry."
           variant="filled"
+          sx={{ mr: 1 }}
         />
         <TextField
           error
@@ -51,6 +68,7 @@ const MuiTextfield = () => {
           label="Error"
           helperText="Incorrect entry."
           variant="standard"
+          sx={{ mr: 1 }}
         />
       </Box>
 
@@ -61,6 +79,7 @@ const MuiTextfield = () => {
           label="Select"
           defaultValue="EUR"
           helperText="Please select your currency"
+          sx={{ mr: 1 }}
         >
           {currencies.map((option) => (
             <MenuItem key={option.value} value={option.value}>
@@ -76,6 +95,7 @@ const MuiTextfield = () => {
             native: true,
           }}
           helperText="Please select your currency"
+          sx={{ mr: 1 }}
         >
           {currencies.map((option) => (
             <option key={option.value} value={option.value}>
