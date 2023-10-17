@@ -6,7 +6,7 @@ const DemoMessage = () => {
       <Paper sx={{ p: 2 }}>
         <Grid container>
           <Grid item xs={2}>
-            <Avatar alt="Remy Sharp" src="/images/avatar/3.jpg" />
+            <Avatar alt="Remy Sharp" src="images/avatar/3.jpg" />
           </Grid>
           <Grid item xs={9}>
             <Typography

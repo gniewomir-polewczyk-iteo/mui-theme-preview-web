@@ -18,7 +18,7 @@ const DemoPlayer = () => {
       <Card sx={{ display: "flex", p: 3 }}>
         <CardMedia
           component="img"
-          image="/images/birds-of-tokyo.jpg"
+          image="images/birds-of-tokyo.jpg"
           alt="Birds of Tokyo cover"
           sx={{ borderRadius: 2, height: 100, width: 100 }}
         />
